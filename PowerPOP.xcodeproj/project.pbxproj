@@ -54,7 +54,7 @@
 		6D4249CD2515D62E003D5C0B /* PowerPOP */ = {
 			isa = PBXGroup;
 			children = (
-				6D4249CE2515D62E003D5C0B /* AppDelegate.swift */,
+				6D4249E42515F38C003D5C0B /* Application Startup */,
 				6D4249D22515D62E003D5C0B /* ViewController.swift */,
 				6D4249D42515D62E003D5C0B /* Main.storyboard */,
 				6D4249E22515F29A003D5C0B /* Support Files */,
@@ -70,6 +70,14 @@
 				6D4249DC2515D630003D5C0B /* Info.plist */,
 			);
 			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		6D4249E42515F38C003D5C0B /* Application Startup */ = {
+			isa = PBXGroup;
+			children = (
+				6D4249CE2515D62E003D5C0B /* AppDelegate.swift */,
+			);
+			path = "Application Startup";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
