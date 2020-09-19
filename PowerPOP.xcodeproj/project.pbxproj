@@ -14,6 +14,7 @@
 		6D4249DB2515D630003D5C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D4249D92515D630003D5C0B /* LaunchScreen.storyboard */; };
 		6D4249E72515F6EB003D5C0B /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4249E62515F6EB003D5C0B /* StoryboardInstantiable.swift */; };
 		6D4249E92515FC82003D5C0B /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4249E82515FC82003D5C0B /* Storyboard.swift */; };
+		6D4249EB2515FF52003D5C0B /* StoryboardProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4249EA2515FF52003D5C0B /* StoryboardProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6D4249DC2515D630003D5C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D4249E62515F6EB003D5C0B /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		6D4249E82515FC82003D5C0B /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		6D4249EA2515FF52003D5C0B /* StoryboardProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				6D4249E62515F6EB003D5C0B /* StoryboardInstantiable.swift */,
 				6D4249E82515FC82003D5C0B /* Storyboard.swift */,
+				6D4249EA2515FF52003D5C0B /* StoryboardProvider.swift */,
 			);
 			path = "Application Navigation";
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				6D4249D32515D62E003D5C0B /* ViewController.swift in Sources */,
 				6D4249E72515F6EB003D5C0B /* StoryboardInstantiable.swift in Sources */,
 				6D4249CF2515D62E003D5C0B /* AppDelegate.swift in Sources */,
+				6D4249EB2515FF52003D5C0B /* StoryboardProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
