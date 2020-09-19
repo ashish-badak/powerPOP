@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, StoryboardInstantiable {
-    static var storyboardName: String { Storyboard.main.rawValue }
+    static var storyboardProvider: StoryboardProvider { Storyboard.main }
 
     override func viewDidLoad() {
         super.viewDidLoad()
