@@ -7,7 +7,20 @@
 //
 
 import Foundation
+import UIKit
 
-enum Storyboard: String {
-    case main = "Main"
+enum Storyboard: StoryboardProvider {
+    case main
+    
+    var storyboardName: String {
+        switch self {
+        case .main: return "Main"
+        }
+    }
+    
+    var storyboardBundle: Bundle? {
+        switch self {
+        default: return nil
+        }
+    }
 }
