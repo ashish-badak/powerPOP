@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+enum Storyboard: String {
+    case main = "Main"
+}
