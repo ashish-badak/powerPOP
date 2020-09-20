@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         window = UIWindow()
-        window?.rootViewController = DashbordTabbarViewController.instantiate()
+        window?.rootViewController = DashboardTabbarViewController.instantiate()
         window?.makeKeyAndVisible()
         
         return true

@@ -1,5 +1,5 @@
 //
-//  DashbordTabbarViewController.swift
+//  DashboardTabbarViewController.swift
 //  PowerPOP
 //
 //  Created by Ashish Personal on 20/09/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class DashbordTabbarViewController: UITabBarController, StoryboardInstantiable {
+final class DashboardTabbarViewController: UITabBarController, StoryboardInstantiable {
     static var storyboardProvider: StoryboardProvider { Storyboard.main }
 
     override func viewDidLoad() {
