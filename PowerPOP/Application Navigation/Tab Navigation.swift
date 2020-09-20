@@ -12,3 +12,16 @@ protocol TabbarComponent {
     var tabbarItem: UITabBarItem { get }
     func getController() -> UIViewController
 }
+
+protocol TabbarCompatibleController {
+    static func make(usingTabbarItem item: UITabBarItem) -> UIViewController
+}
+
+extension TabbarCompatibleController where Self: StoryboardInstantiable, Self: UIViewController {
+    static func make(usingTabbarItem item: UITabBarItem) -> UIViewController {
+        let controller = Self.instantiate()
+        controller.tabBarItem = item
+        controller.title = item.title
+        return TabNavigationWrapper.wrap(controller: controller)
+    }
+}
