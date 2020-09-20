@@ -22,5 +22,19 @@
             </objects>
             <point key="canvasLocation" x="139" y="70"/>
         </scene>
+        <!--Dashbord Tabbar View Controller-->
+        <scene sceneID="VZx-PM-SXp">
+            <objects>
+                <tabBarController storyboardIdentifier="DashbordTabbarViewController" id="yzD-Rm-kb8" customClass="DashbordTabbarViewController" customModule="PowerPOP" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B7o-dE-54L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ADm-EJ-KmV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="846"/>
+        </scene>
     </scenes>
 </document>
