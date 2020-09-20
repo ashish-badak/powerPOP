@@ -18,6 +18,7 @@
 		6DF0DF2425178CB000453AC6 /* HouseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0DF2325178CB000453AC6 /* HouseListViewController.swift */; };
 		6DF0DF2625178CC800453AC6 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0DF2525178CC800453AC6 /* CharacterListViewController.swift */; };
 		6DF0DF2825178CDF00453AC6 /* Listing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF0DF2725178CDF00453AC6 /* Listing.storyboard */; };
+		6DF0DF2C2517B24D00453AC6 /* UITabBarItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0DF2B2517B24D00453AC6 /* UITabBarItemExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		6DF0DF2325178CB000453AC6 /* HouseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListViewController.swift; sourceTree = "<group>"; };
 		6DF0DF2525178CC800453AC6 /* CharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
 		6DF0DF2725178CDF00453AC6 /* Listing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Listing.storyboard; sourceTree = "<group>"; };
+		6DF0DF2B2517B24D00453AC6 /* UITabBarItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarItemExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		6D4249CD2515D62E003D5C0B /* PowerPOP */ = {
 			isa = PBXGroup;
 			children = (
+				6DF0DF292517B22B00453AC6 /* Utility */,
 				6D4249E42515F38C003D5C0B /* Application Startup */,
 				6D4249E52515F69E003D5C0B /* Application Navigation */,
 				6DF0DF1D25178B0300453AC6 /* Dashboard */,
@@ -136,6 +139,22 @@
 				6DF0DF2525178CC800453AC6 /* CharacterListViewController.swift */,
 			);
 			path = Characters;
+			sourceTree = "<group>";
+		};
+		6DF0DF292517B22B00453AC6 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6DF0DF2A2517B23900453AC6 /* Extensions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		6DF0DF2A2517B23900453AC6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6DF0DF2B2517B24D00453AC6 /* UITabBarItemExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +233,7 @@
 				6DF0DF1825174A9A00453AC6 /* DashbordTabbarViewController.swift in Sources */,
 				6D4249E72515F6EB003D5C0B /* StoryboardInstantiable.swift in Sources */,
 				6D4249CF2515D62E003D5C0B /* AppDelegate.swift in Sources */,
+				6DF0DF2C2517B24D00453AC6 /* UITabBarItemExtension.swift in Sources */,
 				6DF0DF2625178CC800453AC6 /* CharacterListViewController.swift in Sources */,
 				6D4249EB2515FF52003D5C0B /* StoryboardProvider.swift in Sources */,
 				6DF0DF2425178CB000453AC6 /* HouseListViewController.swift in Sources */,
