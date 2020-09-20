@@ -8,10 +8,21 @@
 
 import UIKit
 
-class DashbordTabbarViewController: UITabBarController, StoryboardInstantiable {
+final class DashbordTabbarViewController: UITabBarController, StoryboardInstantiable {
     static var storyboardProvider: StoryboardProvider { Storyboard.main }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTabbar()
+    }
+    
+    private func setupTabbar() {
+        let tabs = getTabs()
+        viewControllers = tabs.map { $0.getController() }
+        tabBar.tintColor = .red
+    }
+    
+    private func getTabs() -> [TabbarComponent] {
+        [DashboardTabbarComponent.houses, DashboardTabbarComponent.characters]
     }
 }
