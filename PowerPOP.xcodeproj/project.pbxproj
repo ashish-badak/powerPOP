@@ -21,6 +21,7 @@
 		6DF0DF2C2517B24D00453AC6 /* UITabBarItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0DF2B2517B24D00453AC6 /* UITabBarItemExtension.swift */; };
 		6DF0DF2E2517B40100453AC6 /* NavigationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0DF2D2517B40100453AC6 /* NavigationWrapper.swift */; };
 		6DF0DF302517B50B00453AC6 /* Tab Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0DF2F2517B50B00453AC6 /* Tab Navigation.swift */; };
+		6DF0DF322517B5AB00453AC6 /* DashboardTabbarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0DF312517B5AB00453AC6 /* DashboardTabbarComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		6DF0DF2B2517B24D00453AC6 /* UITabBarItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarItemExtension.swift; sourceTree = "<group>"; };
 		6DF0DF2D2517B40100453AC6 /* NavigationWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationWrapper.swift; sourceTree = "<group>"; };
 		6DF0DF2F2517B50B00453AC6 /* Tab Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tab Navigation.swift"; sourceTree = "<group>"; };
+		6DF0DF312517B5AB00453AC6 /* DashboardTabbarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabbarComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		6DF0DF1D25178B0300453AC6 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				6DF0DF332517B5B800453AC6 /* Model */,
 				6DF0DF1725174A9A00453AC6 /* DashbordTabbarViewController.swift */,
 			);
 			path = Dashboard;
@@ -161,6 +164,14 @@
 				6DF0DF2B2517B24D00453AC6 /* UITabBarItemExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6DF0DF332517B5B800453AC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6DF0DF312517B5AB00453AC6 /* DashboardTabbarComponent.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DF0DF322517B5AB00453AC6 /* DashboardTabbarComponent.swift in Sources */,
 				6DF0DF2E2517B40100453AC6 /* NavigationWrapper.swift in Sources */,
 				6D4249E92515FC82003D5C0B /* Storyboard.swift in Sources */,
 				6DF0DF302517B50B00453AC6 /* Tab Navigation.swift in Sources */,
