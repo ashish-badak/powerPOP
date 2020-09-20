@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HouseListViewController: UIViewController, StoryboardInstantiable {
+class HouseListViewController: UIViewController, StoryboardInstantiable, TabbarCompatibleController {
     static var storyboardProvider: StoryboardProvider { Storyboard.listing }
 
     override func viewDidLoad() {
