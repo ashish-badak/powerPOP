@@ -6,4 +6,9 @@
 //  Copyright © 2020 Ashish Badak. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+protocol TabbarComponent {
+    var tabbarItem: UITabBarItem { get }
+    func getController() -> UIViewController
+}
