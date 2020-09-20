@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Dashbord Tabbar View Controller-->
+        <!--Dashboard Tabbar View Controller-->
         <scene sceneID="VZx-PM-SXp">
             <objects>
-                <tabBarController storyboardIdentifier="DashbordTabbarViewController" id="yzD-Rm-kb8" customClass="DashbordTabbarViewController" customModule="PowerPOP" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="DashboardTabbarViewController" id="yzD-Rm-kb8" customClass="DashboardTabbarViewController" customModule="PowerPOP" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B7o-dE-54L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
