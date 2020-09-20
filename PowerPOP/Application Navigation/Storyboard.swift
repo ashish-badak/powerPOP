@@ -11,10 +11,12 @@ import UIKit
 
 enum Storyboard: StoryboardProvider {
     case main
+    case listing
     
     var storyboardName: String {
         switch self {
         case .main: return "Main"
+        case .listing: return "Listing"
         }
     }
     
