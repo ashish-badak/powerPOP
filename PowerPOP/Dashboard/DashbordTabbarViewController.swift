@@ -8,7 +8,8 @@
 
 import UIKit
 
-class DashbordTabbarViewController: UITabBarController {
+class DashbordTabbarViewController: UITabBarController, StoryboardInstantiable {
+    static var storyboardProvider: StoryboardProvider { Storyboard.main }
 
     override func viewDidLoad() {
         super.viewDidLoad()
