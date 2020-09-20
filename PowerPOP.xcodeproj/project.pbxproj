@@ -62,8 +62,10 @@
 			children = (
 				6D4249E42515F38C003D5C0B /* Application Startup */,
 				6D4249E52515F69E003D5C0B /* Application Navigation */,
-				6DF0DF1625174A2E00453AC6 /* Dashboard */,
-				6D4249D42515D62E003D5C0B /* Main.storyboard */,
+				6DF0DF1D25178B0300453AC6 /* Dashboard */,
+				6DF0DF2225178C3600453AC6 /* Characters */,
+				6DF0DF2125178C2C00453AC6 /* Houses */,
+				6DF0DF1625174A2E00453AC6 /* Storyboards */,
 				6D4249E22515F29A003D5C0B /* Support Files */,
 			);
 			path = PowerPOP;
@@ -97,12 +99,34 @@
 			path = "Application Navigation";
 			sourceTree = "<group>";
 		};
-		6DF0DF1625174A2E00453AC6 /* Dashboard */ = {
+		6DF0DF1625174A2E00453AC6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6D4249D42515D62E003D5C0B /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6DF0DF1D25178B0300453AC6 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
 				6DF0DF1725174A9A00453AC6 /* DashbordTabbarViewController.swift */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		6DF0DF2125178C2C00453AC6 /* Houses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Houses;
+			sourceTree = "<group>";
+		};
+		6DF0DF2225178C3600453AC6 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Characters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
