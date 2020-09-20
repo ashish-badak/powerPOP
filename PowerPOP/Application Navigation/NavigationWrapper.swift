@@ -6,4 +6,24 @@
 //  Copyright © 2020 Ashish Badak. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+protocol NavigationWrapper {
+    static func wrap(controller: UIViewController) -> UINavigationController
+}
+
+extension NavigationWrapper {
+    static func wrap(controller: UIViewController) -> UINavigationController {
+        UINavigationController(rootViewController: controller)
+    }
+}
+
+struct DefaultNavigationWrapper: NavigationWrapper { }
+
+struct TabNavigationWrapper: NavigationWrapper {
+    static func wrap(controller: UIViewController) -> UINavigationController {
+        let navigationController = UINavigationController(rootViewController: controller)
+        navigationController.navigationBar.prefersLargeTitles = true
+        return navigationController
+    }
+}
