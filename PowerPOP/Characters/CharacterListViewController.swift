@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CharacterListViewController: UIViewController, StoryboardInstantiable {
+class CharacterListViewController: UIViewController, StoryboardInstantiable, TabbarCompatibleController {
     static var storyboardProvider: StoryboardProvider { Storyboard.listing }
 
     override func viewDidLoad() {
