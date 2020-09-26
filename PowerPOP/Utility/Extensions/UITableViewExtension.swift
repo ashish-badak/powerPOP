@@ -6,4 +6,14 @@
 //  Copyright © 2020 Ashish Badak. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension UITableView {
+    func register<Cell: UITableViewCell>(_ type: Cell.Type) {
+        self.register(Cell.self, forCellReuseIdentifier: Cell.reuseIdentifier)
+    }
+    
+    func register<Cell: UITableViewCell>(_ type: Cell.Type) where Cell: NibLoadableView {
+        self.register(Cell.nib, forCellReuseIdentifier: Cell.reuseIdentifier)
+    }
+}
