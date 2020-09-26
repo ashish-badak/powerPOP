@@ -82,9 +82,9 @@
 		6D4249CD2515D62E003D5C0B /* PowerPOP */ = {
 			isa = PBXGroup;
 			children = (
-				6DF0DF292517B22B00453AC6 /* Utility */,
 				6D4249E42515F38C003D5C0B /* Application Startup */,
 				6D4249E52515F69E003D5C0B /* Application Navigation */,
+				6DF0DF292517B22B00453AC6 /* Utility */,
 				6DF0DF1D25178B0300453AC6 /* Dashboard */,
 				6DF0DF2225178C3600453AC6 /* Characters */,
 				6DF0DF2125178C2C00453AC6 /* Houses */,
