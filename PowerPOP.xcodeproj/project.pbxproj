@@ -14,6 +14,7 @@
 		6D4249E72515F6EB003D5C0B /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4249E62515F6EB003D5C0B /* StoryboardInstantiable.swift */; };
 		6D4249E92515FC82003D5C0B /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4249E82515FC82003D5C0B /* Storyboard.swift */; };
 		6D4249EB2515FF52003D5C0B /* StoryboardProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4249EA2515FF52003D5C0B /* StoryboardProvider.swift */; };
+		6D5D0D0C251E858300966E35 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5D0D0B251E858300966E35 /* ReusableView.swift */; };
 		6DF0DF1825174A9A00453AC6 /* DashboardTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0DF1725174A9A00453AC6 /* DashboardTabbarViewController.swift */; };
 		6DF0DF2425178CB000453AC6 /* HouseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0DF2325178CB000453AC6 /* HouseListViewController.swift */; };
 		6DF0DF2625178CC800453AC6 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0DF2525178CC800453AC6 /* CharacterListViewController.swift */; };
@@ -34,6 +35,7 @@
 		6D4249E62515F6EB003D5C0B /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		6D4249E82515FC82003D5C0B /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		6D4249EA2515FF52003D5C0B /* StoryboardProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardProvider.swift; sourceTree = "<group>"; };
+		6D5D0D0B251E858300966E35 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		6DF0DF1725174A9A00453AC6 /* DashboardTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabbarViewController.swift; sourceTree = "<group>"; };
 		6DF0DF2325178CB000453AC6 /* HouseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListViewController.swift; sourceTree = "<group>"; };
 		6DF0DF2525178CC800453AC6 /* CharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,14 @@
 			path = "Application Navigation";
 			sourceTree = "<group>";
 		};
+		6D5D0D06251E83B600966E35 /* View Reusability */ = {
+			isa = PBXGroup;
+			children = (
+				6D5D0D0B251E858300966E35 /* ReusableView.swift */,
+			);
+			path = "View Reusability";
+			sourceTree = "<group>";
+		};
 		6DF0DF1625174A2E00453AC6 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +163,7 @@
 		6DF0DF292517B22B00453AC6 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				6D5D0D06251E83B600966E35 /* View Reusability */,
 				6DF0DF2A2517B23900453AC6 /* Extensions */,
 			);
 			path = Utility;
@@ -249,6 +260,7 @@
 				6DF0DF322517B5AB00453AC6 /* DashboardTabbarComponent.swift in Sources */,
 				6DF0DF2E2517B40100453AC6 /* NavigationWrapper.swift in Sources */,
 				6D4249E92515FC82003D5C0B /* Storyboard.swift in Sources */,
+				6D5D0D0C251E858300966E35 /* ReusableView.swift in Sources */,
 				6DF0DF302517B50B00453AC6 /* Tab Navigation.swift in Sources */,
 				6DF0DF1825174A9A00453AC6 /* DashboardTabbarViewController.swift in Sources */,
 				6D4249E72515F6EB003D5C0B /* StoryboardInstantiable.swift in Sources */,
