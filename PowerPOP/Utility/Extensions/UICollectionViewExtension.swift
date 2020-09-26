@@ -16,4 +16,13 @@ extension UICollectionView {
     func register<Cell: UICollectionViewCell>(_ type: Cell.Type) where Cell: NibLoadableView {
         self.register(Cell.nib, forCellWithReuseIdentifier: Cell.reuseIdentifier)
     }
+    
+    func dequeue<Cell: UICollectionViewCell>(forIndexPath indexPath: IndexPath) -> Cell {
+        guard let cell = self.dequeueReusableCell(withReuseIdentifier: Cell.reuseIdentifier, for: indexPath) as? Cell
+            else {
+                fatalError("Failed to dequeue cell with reuseIdentifier: \(Cell.reuseIdentifier)")
+        }
+        
+        return cell
+    }
 }
