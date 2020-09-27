@@ -23,6 +23,7 @@
 		6DBC3D272520844A0033D0A4 /* APIRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC3D262520844A0033D0A4 /* APIRequestError.swift */; };
 		6DBC3D2C252089380033D0A4 /* RequestEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC3D2B252089380033D0A4 /* RequestEndPoint.swift */; };
 		6DBC3D3B2520C0BB0033D0A4 /* URLRequestConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC3D3A2520C0BB0033D0A4 /* URLRequestConverter.swift */; };
+		6DBC3D3D2520C7170033D0A4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC3D3C2520C7170033D0A4 /* NetworkService.swift */; };
 		6DF0DF1825174A9A00453AC6 /* DashboardTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0DF1725174A9A00453AC6 /* DashboardTabbarViewController.swift */; };
 		6DF0DF2425178CB000453AC6 /* HouseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0DF2325178CB000453AC6 /* HouseListViewController.swift */; };
 		6DF0DF2625178CC800453AC6 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0DF2525178CC800453AC6 /* CharacterListViewController.swift */; };
@@ -52,6 +53,7 @@
 		6DBC3D262520844A0033D0A4 /* APIRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestError.swift; sourceTree = "<group>"; };
 		6DBC3D2B252089380033D0A4 /* RequestEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestEndPoint.swift; sourceTree = "<group>"; };
 		6DBC3D3A2520C0BB0033D0A4 /* URLRequestConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConverter.swift; sourceTree = "<group>"; };
+		6DBC3D3C2520C7170033D0A4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		6DF0DF1725174A9A00453AC6 /* DashboardTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabbarViewController.swift; sourceTree = "<group>"; };
 		6DF0DF2325178CB000453AC6 /* HouseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListViewController.swift; sourceTree = "<group>"; };
 		6DF0DF2525178CC800453AC6 /* CharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				6DBC3D262520844A0033D0A4 /* APIRequestError.swift */,
 				6DBC3D2B252089380033D0A4 /* RequestEndPoint.swift */,
 				6DBC3D3A2520C0BB0033D0A4 /* URLRequestConverter.swift */,
+				6DBC3D3C2520C7170033D0A4 /* NetworkService.swift */,
 			);
 			path = "Network Service";
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				6D4249CF2515D62E003D5C0B /* AppDelegate.swift in Sources */,
 				6DF0DF2C2517B24D00453AC6 /* UITabBarItemExtension.swift in Sources */,
 				6DBC3D3B2520C0BB0033D0A4 /* URLRequestConverter.swift in Sources */,
+				6DBC3D3D2520C7170033D0A4 /* NetworkService.swift in Sources */,
 				6DBC3D272520844A0033D0A4 /* APIRequestError.swift in Sources */,
 				6D21C9F4251F338900AB41CC /* NibLoadableView.swift in Sources */,
 				6DF0DF2625178CC800453AC6 /* CharacterListViewController.swift in Sources */,
