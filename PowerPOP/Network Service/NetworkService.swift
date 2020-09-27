@@ -8,24 +8,46 @@
 
 import Foundation
 
-typealias NetworkRouterCompletion = (_ data: Data?,_ response: URLResponse?,_ error: Error?)->()
+typealias NetworkRouterCompletion = (Result<Data, APIRequestError>) -> ()
 
 protocol NetworkService: AnyObject {
-    func request(_ route: URLRequestConverter, completion: @escaping NetworkRouterCompletion)
+    func request(_ requestBuilder: URLRequestConverter, validator: APIResponseValidator, completion: @escaping NetworkRouterCompletion)
     func cancel()
 }
 
 final class DefaultNetworkService: NetworkService {
     private var task: URLSessionTask?
 
-    func request(_ requestBuilder: URLRequestConverter, completion: @escaping NetworkRouterCompletion) {
+    func request(
+        _ requestBuilder: URLRequestConverter,
+        validator: APIResponseValidator,
+        completion: @escaping NetworkRouterCompletion
+    ) {
+        
         guard let urlRequest = requestBuilder.urlRequest() else {
-            completion(nil, nil, APIRequestError.missingURL)
+            completion(.failure(.missingURL))
             return
         }
         
         task = URLSession.shared.dataTask(with: urlRequest) { (data, urlResponse, error) in
-            completion(data, urlResponse, error)
+            
+            guard let response = urlResponse as? HTTPURLResponse else {
+                completion(.failure(.invalidResponse))
+                return
+            }
+            
+            let result = validator.validate(response: response)
+            switch result {
+            case .success:
+                if let data = data {
+                    completion(.success(data))
+                } else {
+                    completion(.failure(.noData))
+                }
+                
+            case .failure(let error):
+                completion(.failure(error))
+            }
         }
         task?.resume()
     }
@@ -34,4 +56,3 @@ final class DefaultNetworkService: NetworkService {
         task?.cancel()
     }
 }
-
