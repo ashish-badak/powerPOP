@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+enum APIRequestError: Error {
+    case missingURL
+}
+
+extension APIRequestError: CustomStringConvertible {
+    var description: String {
+        switch self {
+        case .missingURL:
+            return "URL is missing or it is invalid"
+        }
+    }
+}
