@@ -37,4 +37,4 @@ extension APIVersioning {
     var apiVersion: String { "v1" }
 }
 
-typealias VersionedGetAPIRequest = GetRequestEndPoint & APIVersioning
+typealias VersionedGetRequestEndPoint = GetRequestEndPoint & APIVersioning
