@@ -20,7 +20,7 @@ protocol RequestEndPoint {
 }
 
 extension RequestEndPoint {
-    var baseURL: String { "https://game-of-thrones-quotes.herokuapp.com" }
+    var baseURL: String { "https://game-of-thrones-quotes.herokuapp.com/v1" }
     var headers: HTTPHeaders { [:] }
     var encoding: ParameterEncoder? { nil }
 }
@@ -30,13 +30,3 @@ protocol GetRequestEndPoint: RequestEndPoint { }
 extension GetRequestEndPoint {
     var httpMethod: HTTPMethod { .get }
 }
-
-protocol APIVersioning {
-    var apiVersion: String { get }
-}
-
-extension APIVersioning {
-    var apiVersion: String { "v1" }
-}
-
-typealias VersionedGetRequestEndPoint = GetRequestEndPoint & APIVersioning
