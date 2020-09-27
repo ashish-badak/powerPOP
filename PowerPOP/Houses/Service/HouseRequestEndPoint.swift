@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+enum HouseRequestEndPoint: GetRequestEndPoint {
+    case houseList
+    case house(slug: String)
+    
+    var path: String {
+        switch self {
+        case .houseList:
+            return "/houses"
+        case .house(let slug):
+            return "/house/\(slug)"
+        }
+    }
+    
+    var parameters: Params? { nil }
+}
