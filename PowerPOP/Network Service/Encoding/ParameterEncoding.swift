@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ParameterEncoder {
-    static func encode(urlRequest: inout URLRequest, with params: Params) throws
+    func encode(urlRequest: inout URLRequest, with params: Params) throws
 }
