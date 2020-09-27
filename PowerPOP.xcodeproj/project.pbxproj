@@ -140,11 +140,19 @@
 			path = "View Reusability";
 			sourceTree = "<group>";
 		};
+		6DBC3D282520867E0033D0A4 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				6DBC3D24252083890033D0A4 /* ParameterEncoding.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
 		6DF0808325206A3900212972 /* Network Service */ = {
 			isa = PBXGroup;
 			children = (
+				6DBC3D282520867E0033D0A4 /* Encoding */,
 				6DBC3D20252082160033D0A4 /* HTTPMethod.swift */,
-				6DBC3D24252083890033D0A4 /* ParameterEncoding.swift */,
 				6DBC3D262520844A0033D0A4 /* APIRequestError.swift */,
 			);
 			path = "Network Service";
