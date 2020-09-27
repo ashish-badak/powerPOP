@@ -16,11 +16,13 @@ protocol RequestEndPoint {
     var headers: HTTPHeaders { get }
     
     var httpMethod: HTTPMethod { get }
+    var encoding: ParameterEncoder? { get }
 }
 
 extension RequestEndPoint {
     var baseURL: String { "https://game-of-thrones-quotes.herokuapp.com" }
     var headers: HTTPHeaders { [:] }
+    var encoding: ParameterEncoder? { nil }
 }
 
 protocol GetRequestEndPoint: RequestEndPoint { }
