@@ -8,6 +8,9 @@
 
 import Foundation
 
+typealias Params = [String: Any]
+typealias HTTPHeaders = [String: String]
+
 enum HTTPMethod: String {
     case get = "GET"
     case post = "POST"
